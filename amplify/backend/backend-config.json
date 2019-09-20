@@ -1,0 +1,14 @@
+{
+	"auth": {
+		"petreviewsdbeacd90": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"storage": {
+		"petreviews": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

@@ -1,0 +1,72 @@
+{
+    "identityPoolName": "petreviewsdbeacd90_identitypool_dbeacd90",
+    "allowUnauthenticatedIdentities": true,
+    "lambdaLogPolicy": "petrev_dbeacd90_lambda_log_policy",
+    "openIdLambdaRoleName": "petrev_dbeacd90_openid_lambda_role",
+    "openIdRolePolicy": "petrev_dbeacd90_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "petrev_dbeacd90_openid_lambda_iam_policy",
+    "openIdLogPolicy": "petrev_dbeacd90_openid_lambda_log_policy",
+    "userPoolName": "petreviewsdbeacd90_userpool_dbeacd90",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "petrevdbeacd90_sns-role",
+    "roleExternalId": "petrevdbeacd90_role_external_id",
+    "policyName": "petrevdbeacd90-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email",
+        "name"
+    ],
+    "userpoolClientName": "petrevdbeacd90_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "petrevdbeacd90_totp_lambda_role",
+    "mfaLambdaLogPolicy": "petrevdbeacd90_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "petrevdbeacd90_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "petrevdbeacd90_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "petrevdbeacd90_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "petrevdbeacd90_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "petrevdbeacd90_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "petreviewsdbeacd90",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default",
+    "usernameAttributes": [
+        "email"
+    ]
+}

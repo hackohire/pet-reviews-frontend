@@ -1,0 +1,19 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "pet-reviews-prod-20190920161627-authRole",
+            "UnauthRoleArn": "arn:aws:iam::744573631627:role/pet-reviews-prod-20190920161627-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::744573631627:role/pet-reviews-prod-20190920161627-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "pet-reviews-prod-20190920161627-deployment",
+            "UnauthRoleName": "pet-reviews-prod-20190920161627-unauthRole",
+            "StackName": "pet-reviews-prod-20190920161627",
+            "StackId": "arn:aws:cloudformation:us-east-1:744573631627:stack/pet-reviews-prod-20190920161627/e738b700-db93-11e9-97d4-1207b4ca758c"
+        },
+        "categories": {
+            "auth": {
+                "petreviewsdbeacd90": {}
+            }
+        }
+    }
+}
